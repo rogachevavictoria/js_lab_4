@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_3_3</title>
+</head>
+<body>
+    <script>
+var str = prompt("Enter path:");
+var reg = /[\\]/
+var path = ''
+splits = str.split(reg)
+for (var i = 0; i < splits.length - 1; i++){
+    if (splits[i] != ''){
+       path = path  + splits[i] + ' > '
+    }
+}
+alert('Path: ' + path)
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_3_3</title>
+</head>
+<body>
+    <script>
+var str = "Кузьмин Иван\nПетров Петр\nФедоров Иван";
+alert(str);
+let reg = new RegExp(prompt("Enter first and last name:"));
+if (str.match(reg)){
+    alert("Name found.");
+    alert(str.replace(reg, "Иванов Иван"));
+}
+    </script>
+</body>
+</html>

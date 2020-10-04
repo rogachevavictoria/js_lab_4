@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_3_3</title>
+</head>
+<body>
+    <script>
+var str = prompt("Enter text:");
+var reg = /(ик)$/
+splits = str.split(' ')
+res = ''
+splits.forEach(i => {
+    if (i.match(reg)){
+        res = res + i.replace(reg,'') + ' '
+    }
+    else{
+        res = res + i + ' '
+    }
+});
+alert(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_3_3</title>
+</head>
+<body>
+    <script>
+var str = prompt("Enter phone number:");
+var reg = /[+]?\d[\s]?[(]?\d{3}[)]?[\s]?\d{3}[-]?[\s]?\d{2}[-]?[\s]?\d{2}/
+if (str.match(reg)){
+    alert("Accepted.")
+    console.log(str,'\n',"Accepted.")
+}
+
+    </script>
+</body>
+</html>
